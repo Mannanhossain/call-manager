@@ -1,0 +1,53 @@
+name: auto_sms_reply
+description: A Flutter app that sends auto-SMS for missed calls
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  phone_state: ^2.1.1
+  call_log: ^6.0.1
+  telephony:
+    path: ./plugins/telephony
+  # telephony:
+ 
+  #   git:
+  #     url: https://github.com/definev/Telephony.git
+  #     ref: develop
+  shared_preferences: ^2.3.2
+  
+
+  permission_handler: ^12.0.1
+  fluttertoast: ^8.2.4
+  workmanager: ^0.9.0+3
+  # test_api: ^0.7.6
+  android_intent_plus: ^6.0.0
+  device_info_plus: ^9.0.0
+  url_launcher: ^6.1.11
+  flutter_overlay_window: ^0.4.5
+  http: ^1.2.1
+
+  # firebase_core: ^2.27.0  # Use a recent stable version
+  # firebase_auth: ^4.17.4 
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+dependency_overrides:
+  characters: ^1.4.1
+  material_color_utilities: ^0.13.0
+  meta: ^1.17.0
+  test_api: ^0.7.7
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/telephone.png
+
